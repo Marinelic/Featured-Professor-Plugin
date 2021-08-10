@@ -3,7 +3,7 @@
 function relatedPostsHTML($id) {
   $postsAboutThisProf = new WP_Query(array(
     'posts_per_page' => -1,
-    'post_type' => 'post',
+    'post_type' => 'professor',
     'meta_query' => array(
       array(
         'key' => 'featuredprofessor',
